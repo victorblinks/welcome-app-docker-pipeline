@@ -8,6 +8,7 @@ pipeline{
       steps{
         sh "echo 'cloning the latest application version' "
         git branch: 'may20', url: 'https://github.com/victorblinks/welcome-app-docker-pipeline.git'
+      }
     }
     stage('3Test+Build'){
       steps{
@@ -58,6 +59,5 @@ Thanks
 LionTech
 +1 647-381-8836''', recipientProviders: [buildUser(), developers()], subject: 'success', to: 'paypal-team@gmail.com'
     }
-   }
-  }
- }
+  } 
+}

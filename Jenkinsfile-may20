@@ -30,7 +30,7 @@ pipeline{
     } 
     stage('8deploy2prod'){
       steps{
-        deploy adapters: [tomcat9(credentialsId: 'may15', path: '', url: 'http://3.96.206.84:8009/')], contextPath: 'class30', war: 'target/*war'
+        deploy adapters: [tomcat9(credentialsId: 'vicky-build', path: '', url: 'http://3.96.206.84:8009/')], contextPath: 'victor', war: 'target/*war'
     }
 }
 }
